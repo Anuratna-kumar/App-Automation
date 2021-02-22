@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3" verbose="5">
+
+    <listeners>
+        <listener class-name="appBase.ListenersUtility"></listener>
+    </listeners>
+
+
+    <test name="Test1" preserve-order="false">
+
+        <parameter name="deviceName" value="iPhone 11"></parameter>
+        <parameter name="platformName" value="iOS"></parameter>
+        <parameter name="platformVersion" value="13.6"></parameter>
+        <parameter name="wda" value="8100"></parameter>
+        <parameter name="port" value="4725"></parameter>
+
+        <classes>
+            <class name="testClass.Apptest"/>
+        </classes>
+
+    </test>
+
+    <test  name="Test2" preserve-order="false">
+
+        <parameter name="deviceName" value="iPhone 11 Pro"></parameter>
+        <parameter name="platformName" value="iOS"></parameter>
+        <parameter name="platformVersion" value="13.6"></parameter>
+        <parameter name="wda" value="8101"></parameter>
+        <parameter name="port" value="4726"></parameter>
+
+        <classes>
+            <class name="testClass.Apptest"/>
+        </classes>
+
+    </test>
+
+    <test  name="Test3" preserve-order="false">
+
+        <parameter name="deviceName" value="iPhone 8"></parameter>
+        <parameter name="platformName" value="iOS"></parameter>
+        <parameter name="platformVersion" value="13.6"></parameter>
+        <parameter name="wda" value="8102"></parameter>
+        <parameter name="port" value="4727"></parameter>
+
+        <classes>
+            <class name="testClass.Apptest"/>
+        </classes>
+
+    </test>
+
+</suite>

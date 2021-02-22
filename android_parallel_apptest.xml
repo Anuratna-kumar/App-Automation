@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="appBase.ListenersUtility"></listener>
+    </listeners>
+
+
+    <test name="Test1">
+
+        <parameter name="deviceName" value="Anu Op"></parameter>
+        <parameter name="udid" value="emulator-5554"></parameter>
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="10"></parameter>
+        <parameter name="wda" value="8200"></parameter>
+        <parameter name="port" value="4825"></parameter>
+
+        <classes>
+            <class name="testClass.Apptest"/>
+        </classes>
+
+    </test>
+
+    <test  name="Test2">
+
+        <parameter name="deviceName" value="Anu Op"></parameter>
+        <parameter name="udid" value="emulator-5556"></parameter>
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="9"></parameter>
+        <parameter name="wda" value="8201"></parameter>
+        <parameter name="port" value="4826"></parameter>
+
+        <classes>
+            <class name="testClass.Apptest"/>
+        </classes>
+
+    </test>
+
+    <test  name="Test3">
+
+        <parameter name="deviceName" value="Anu Op"></parameter>
+        <parameter name="udid" value="emulator-5558"></parameter>
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="8"></parameter>
+        <parameter name="wda" value="8202"></parameter>
+        <parameter name="port" value="4827"></parameter>
+
+        <classes>
+            <class name="testClass.Apptest"/>
+        </classes>
+
+    </test>
+
+</suite>
