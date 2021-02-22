@@ -2,8 +2,6 @@ package testClass;
 
 import appBase.BaseClass;
 import features.CalculatorFeature;
-import io.appium.java_client.MobileElement;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,7 +11,7 @@ public class CalculatorTests extends BaseClass {
 
     @Test
     public void verifySum(){
-        Assert.assertEquals("5",feature.do_sum());
+        Assert.assertEquals(5,feature.do_sum());
     }
 
     @Test
